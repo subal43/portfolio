@@ -6,7 +6,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A personal portfolio website built with React and TailwindCSS to showcase my projects and skills.',
     github: 'https://github.com/subal43/portfolio',
-    demo: 'https://subal-portfolio.vercel.app',
+    demo: 'https://portfoliosubal.netlify.app/',
   },
   {
     title: 'Pay-App',
@@ -19,6 +19,18 @@ const projects = [
     description: 'A simple and intuitive Amazon Clone application made with Simple HTML and CSS.',
     github: 'https://github.com/subal43/amazon-home-page',
     demo: 'https://subalamazonclone.netlify.app/',
+  },
+  {
+    title: 'CarRent-Backend',
+    description: 'A car rental application backend built with Node.js, Express and MongoDB.',
+    github: 'https://github.com/subal43/CarRent',
+    demo: '',
+  },
+  {
+    title: 'Amazondeal Clone',
+    description: 'A simple and intuitive Amazondeal page made with Simple HTML and CSS.',
+    github: 'https://github.com/subal43/amazondeal',
+    demo: '',
   },
 ];
 
