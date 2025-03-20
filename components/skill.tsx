@@ -8,7 +8,7 @@ const skills = [
       Java is a versatile, object-oriented programming language which I have learned from my college teacher. 
       Also, I have completed the NPTEL Java Course Program for further improvement.{" "}  
        <a
-        href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs43/Course/NPTEL24CS43S106680008730749175.pdf"
+        href="https://drive.google.com/file/d/1Fh5-T2Wg9Vw65Yduvf0k9ZhjzrNhfSYa/view?usp=sharing"
         target="_blank"
         className="text-blue-500 underline"
       >
