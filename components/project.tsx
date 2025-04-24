@@ -32,9 +32,15 @@ const projects = [
     github: 'https://github.com/subal43/amazondeal',
     demo: '',
   },
+  {
+    title: 'BlogWorld',
+    description: "Full-stack BlogWorld built with React, Tailwind CSS, TypeScript, Express, and Hono.Uses Prisma + PostgreSQL for data, deployed via Cloudflare.Simple, scalable, and a work in progress — but it works! 💡",
+    github: 'https://github.com/subal43/BlogWorld',
+    demo: 'https://subalblog.netlify.app/',
+  },
 ];
 
-export const Projects:React.FC=()=>{
+export const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-16 bg-white">
       <div className="container mx-auto px-4">
