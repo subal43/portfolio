@@ -97,7 +97,7 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-white focus:outline-none mr-7 "
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
           aria-expanded={isOpen}
