@@ -12,7 +12,7 @@
   "dependencies": {
     "@shadcn/ui": "^0.0.4",
     "@tailwindcss/vite": "^4.0.8",
-    "framer-motion": "^12.4.10",
+    "framer-motion": "^12.23.26",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

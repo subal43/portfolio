@@ -3,77 +3,71 @@ import React from "react"
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website built with React and TailwindCSS to showcase my projects and skills.',
-    github: 'https://github.com/subal43/portfolio',
-    demo: 'https://portfoliosubal.netlify.app/',
-  },
-  {
-    title: 'Pay-App',
-    description: 'A Paytm like application built with React, TailwindCSS, Express and database (Mongodb).',
-    github: 'https://github.com/subal43/pay-app',
+    title: 'Social Media Sentiment Analysis & Trend Prediction',
+    description: 'Collected and analyzed large-scale social media text data to identify sentiment trends. Performed data cleaning, preprocessing, feature extraction, and EDA. Built and evaluated ML models using accuracy, precision, recall, and F1-score. Generated actionable insights to support business and marketing decisions.',
+    github: 'https://github.com/subal43/DS-Social-Media-Sentiment-Analyzer-Trend-Prediction.git',
     demo: '',
   },
   {
-    title: 'Amazon Clone',
-    description: 'A simple and intuitive Amazon Clone application made with Simple HTML and CSS.',
-    github: 'https://github.com/subal43/amazon-home-page',
-    demo: 'https://subalamazonclone.netlify.app/',
-  },
-  {
-    title: 'CarRent-Backend',
-    description: 'A car rental application backend built with Node.js, Express and MongoDB.',
-    github: 'https://github.com/subal43/CarRent',
+    title: 'California House Price Prediction',
+    description: 'Developed a regression-based ML model to predict housing prices. Conducted EDA, feature engineering, scaling, and model evaluation using RMSE and R². Applied SHAP (Explainable AI) to interpret predictions and identify key price drivers.',
+    github: 'https://github.com/subal43/DS-California-House-Price-Prediction.git',
     demo: '',
-  },
-  {
-    title: 'Amazondeal Clone',
-    description: 'A simple and intuitive Amazondeal page made with Simple HTML and CSS.',
-    github: 'https://github.com/subal43/amazondeal',
-    demo: '',
-  },
-  {
-    title: 'BlogWorld',
-    description: "Full-stack BlogWorld built with React, Tailwind CSS, TypeScript, Express, and Hono.Uses Prisma + PostgreSQL for data, deployed via Cloudflare.Simple, scalable, and a work in progress — but it works! 💡",
-    github: 'https://github.com/subal43/BlogWorld',
-    demo: 'https://subalblog.netlify.app/',
   },
 ];
 
+import { motion } from 'framer-motion';
+
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-16 bg-white">
+    <section id="projects" className="py-20 bg-slate-900 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl md:text-5xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600"
+        >
+          My Projects
+        </motion.h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-gray-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="group bg-slate-800/50 backdrop-blur-md rounded-2xl p-6 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 flex flex-col h-full"
             >
-              <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className="flex gap-4 mt-auto">
+              <div className="mb-4">
+                <h3 className="text-2xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors">{project.title}</h3>
+                <p className="text-slate-400 leading-relaxed mb-6 flex-grow">{project.description}</p>
+              </div>
+
+              <div className="flex gap-4 mt-auto pt-6 border-t border-slate-700">
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black hover:text-gray-700"
+                  className="flex items-center gap-2 text-slate-300 hover:text-cyan-400 transition-colors"
                 >
-                  <FaGithub size={24} />
+                  <FaGithub size={20} />
+                  <span className="font-medium">Code</span>
                 </a>
                 {project.demo && (
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black hover:text-gray-700"
+                    className="flex items-center gap-2 text-slate-300 hover:text-cyan-400 transition-colors"
                   >
-                    <FaExternalLinkAlt size={24} />
+                    <FaExternalLinkAlt size={20} />
+                    <span className="font-medium">Live Demo</span>
                   </a>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
