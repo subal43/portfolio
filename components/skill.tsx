@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaPython, FaHtml5, FaCss3Alt, FaGithub, FaDatabase, FaLinux, FaChartBar, FaBrain, FaServer, FaGitAlt, FaLanguage, FaChartLine } from 'react-icons/fa';
-import { SiJavascript, SiPandas, SiNumpy, SiScikitlearn, SiJupyter, SiGooglecolab, SiPostgresql, SiTensorflow, SiPytorch, SiHuggingface } from 'react-icons/si';
+import { SiJavascript, SiPandas, SiNumpy, SiScikitlearn, SiJupyter, SiGooglecolab, SiTensorflow, SiHuggingface } from 'react-icons/si';
 import React, { useState } from "react";
 
 const skills = [
