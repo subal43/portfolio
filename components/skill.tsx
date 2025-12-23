@@ -176,7 +176,7 @@ export const Skills: React.FC = () => {
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="bg-slate-800 p-8 rounded-2xl shadow-2xl max-w-md w-full border border-slate-600 relative"
+            className="mr-8 bg-slate-800 p-8 rounded-2xl shadow-2xl max-w-md w-full border border-slate-600 relative"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="text-5xl mb-6 flex justify-center">{selectedSkill.icon}</div>
