@@ -28,6 +28,12 @@ const projects = [
     demo: '',
   },
  
+   {
+    title: 'WhatsApp Chat Analysis',
+    description: 'WhatsApp Chat Analysis project that extracts meaningful insights from chat data using Python. It analyzes message patterns, user activity, emojis, word frequency, and timelines to visualize communication behavior effectively.',
+    github: 'https://github.com/subal43/DS-WhatsApp-Chat-Analyzer.git',
+    demo: '',
+  },
 ];
 
 import { motion } from 'framer-motion';
