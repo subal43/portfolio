@@ -14,6 +14,13 @@ const projects = [
     github: 'https://github.com/subal43/DS-California-House-Price-Prediction.git',
     demo: '',
   },
+  {
+    title: 'SMS Classifier',
+    description: 'A simple yet powerful web application designed to classify SMS messages as either Spam or Ham (not spam). Built with Python, this project leverages Natural Language Processing (NLP) and Machine Learning to provide accurate predictions.',
+    github: 'https://github.com/subal43/DS-SMS-Classifier-System.git',
+    demo: '',
+  },
+ 
 ];
 
 import { motion } from 'framer-motion';
